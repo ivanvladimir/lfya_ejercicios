@@ -5,26 +5,24 @@
 body {
 }
 
-
 strike {
   color: rgba(0,0,0,.4);
 }
 
-
 .reveal {
 
-  color: @secondary;
+    color: @secondary;
+
     .slide-background-content {
         background: @primary;
     }
 
   	.slides {
-
 		.footer {
 			position: absolute;
 			bottom: 1em;
 			left: -1em;
-			font-size: 0.5em;
+			font-size: 0.6em;
 		}
 
 		.footer ul {
@@ -38,127 +36,121 @@ strike {
 			padding-left: 100px;
 		}
 
-
 		.footer li a, a:link, a:visited, a:hover, a:active {
 			color: @tertiary;
 		}
+    }
 
-
-  }
-
-  h1 {
+    h1 {
 	color: @secondary;
-	font-size: 2.0em;
-	font-weight: 400;
 	text-align: left;
 	position: relative;
 
-	span {
-	  display: block;
-	  font-weight: 50;
-	  font-style: italic;
-	  font-size: 0.5em;
-	}
-  }
+        span {
+          display: block;
+          font-weight: 50;
+          font-style: italic;
+          font-size: 0.4em;
+        }
+    }
 
-  h2 {
-  	color: @secondary;
-	text-align: left;
-  }
+    h2 {
+        color: @secondary;
+        text-align: left;
+    }
 
-  h3 {
-  	color: @secondary;
-	text-align: left;
-    font-size: 1em;
-    font-weight: 200;
-  }
+    h3 {
+        color: @secondary;
+        text-align: left;
+    }
 
-  p {
-	text-align: left;
-  }
+    p {
+        text-align: left;
+        font-size: 1em;
+    }
 
-  li {
-	text-align: left;
-  }
+    li {
+        text-align: left;
+        font-size: 1em;
+    }
 
-  ul {
-	width: 100%;
-	float:left;
-	text-align: left;
-  }
+    ul {
+        width: 100%;
+        float:left;
+        text-align: left;
+    }
 
-  img {
-	  border:0;
-	  background:rgba(255, 255, 255, 0);
-	  box-shadow:0 0 0 0;
-  }
+    img {
+          border:0;
+          background:rgba(255, 255, 255, 0);
+          box-shadow:0 0 0 0;
+    }
 
-  .inverse {
-	color: @primary;
-    @spacing: 5px;
-    background: @tertiary;
-    border-radius: 4px;
-    padding: @spacing;
-    margin-right: @spacing;
-    display: inline-block;
-  }
+    .inverse {
+        color: @primary;
+        @spacing: 3px;
+        background: @tertiary;
+        border-radius: 5px;
+        padding: @spacing;
+        margin-right: @spacing;
+        display: inline-block;
+    }
 
-  .big {
-	font-weight: 900;
-    font-size: 2em;
-    tex-transform: uppercase;
-  }
+    .big {
+        font-weight: 900;
+        font-size: 2em;
+        tex-transform: uppercase;
+    }
 
+    td {
+          img {
+              display: inline;
 
-  td {
-	  img {
-		  display: inline;
+          }
+    }
 
-	  }
-  }
+    blockquote{
+	    font-size: 0.2em;
+	    color: @primary;
+    }
 
-  blockquote{
-	font-size: 0.4em;
-	color: @primary;
-  }
+    .timer .buttons .button {
+        width: 30px;
+        height: 30px;
+        background: @tertiary;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 5px 5px;
+        color: @primary;
+        font-size: 0.3em;
+        border-radius: 5px;
+        -moz-transition: color 400ms;
+        -o-transition: color 400ms;
+        -webkit-transition: color 400ms;
+        transition: color 400ms
+    }
 
- .timer .buttons .button {
-    width: 30px;
-    height: 30px;
-    background: @tertiary;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin: 5px 5px;
-    color: @primary;
-    font-size: 0.3em;
-	border-radius: 5px;
-    -moz-transition: color 400ms;
-    -o-transition: color 400ms;
-    -webkit-transition: color 400ms;
-    transition: color 400ms
-  }
+    .timer .buttons .button:hover {
+        color: @secondary;
+    }
 
-  .timer .buttons .button:hover {
-    color: @secondary;
-  }
+    .timer {
+        font-size: 1em;
+        font-weight: 100;
+    }
 
-  .timer {
-    font-size: 2.5em;
-    font-weight: 100;
-  }
+    .timer .time-input {
+        display: inline;
+        margin: 0 auto;
+        font-size: .3em;
+        max-width: 30px;
+        padding: 4px;
+        border-radius: 4px;
+        color: @secondary;
+        transition: all 700ms
+    }
 
-  .timer .time-input {
-    display: inline;
-    margin: 0 auto;
-    font-size: .3em;
-    max-width: 30px;
-    padding: 4px;
-    border-radius: 4px;
-    color: @secondary;
-    transition: all 700ms
-  }
-  
   .bubble {
 		background-image: linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
 		background-image: -o-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
@@ -243,12 +235,6 @@ strike {
 		right: -5px;
 	}
 
-
-  p {
-	  font-family: Lato;
-      font-weight: 100;
-      font-size: 1.2em;
-    }
 
   blockquote {
     background: @tertiary;
