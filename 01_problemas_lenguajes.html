@@ -59,9 +59,9 @@
 				<section>
 					<p>Proponer un alfabeto $\Sigma$ para cada uno de los siguientes ejemplos de cadenas:</p>
 					<ul>
-						<li>$a$, $b$, $c$ </li>
-						<li>$00001$, $1000$, $11111$ </li>
-						<li>$1,243.98$, $546.0$, $7,340.0$</li>
+						<li>$ab$, $aabb$, $aaabbb$ </li>
+						<li>$0$, $000$, $00000$ </li>
+                        <li>$print\ hello$, $for\ i\ in\ l$, $var=i$</li>
 					</ul>
 
 					<div class="timer" time='2'></div>
@@ -70,9 +70,9 @@
 				<section>
 					<p>Proponer tres cadenas para los siguientes alfabetos $\Sigma$</p>
 					<ul>
-						<li>$\{x,y,z\}$ </li>
-						<li>$\{0,1,+,-,*,/,(,)\}$ </li>
-						<li>$\{sol,águila\}$</li>
+						<li>$\{0,1\}$ </li>
+						<li>{🙂,😐,☹️,😶,🙃} </li>
+						<li>$\{1,2,3,4,5,6,7,8,9,0,+,-,×,/\}$</li>
 					</ul>
 					<div class="timer" time='2'></div>
 					<p style="float:right;font-size:0.6em;" class="inverse">Individual</p>
@@ -80,20 +80,19 @@
 				<section>
 					<p>Proponer un lenguaje infinito para los siguientes alfabetos $\Sigma$</p>
 					<ul>
-						<li>$\{x,y,z\}$ </li>
-						<li>$\{0,1,+,-,*,/,(,)\}$ </li>
-						<li>$\{sol,águila\}$</li>
+                        <li>$\{0,1\}$ </li>
+						<li>{🙂,😐,☹️,😶,🙃} </li>
+						<li>$\{1,2,3,4,5,6,7,8,9,0,+,-,×,/\}$</li>
 					</ul>
 					<div class="timer" time='2'></div>
 					<p style="float:right;font-size:0.6em;" class="inverse">Individual</p>
 				</section>
 				<section>
-					<p>Con $\Sigma=\{a,b\}$, concatenar las siguientes cadenas:</p>
+					<p>Con $\Sigma=\{○, □\}$, concatenar las siguientes cadenas:</p>
 					<ul>
-						<li>$aa$ y $aaa$ </li>
-						<li>$abab$ y $bbb$ </li>
-						<li>$bbb$ y $abab$ </li>
-						<li>$\epsilon$ y $bab$ </li>
+						<li>$□○○$ y $□□□$ </li>
+						<li>$□○□○$ y $○○○○○$ </li>
+						<li>$\epsilon$ y $○□○□$ </li>
 						<li>$\epsilon$ y $\epsilon$ </li>
 					</ul>
 					<div class="timer" time='3'></div>
@@ -101,62 +100,51 @@
 				</section>
 
 				<section>
-					<p>Con $\Sigma=\{a,b,0,1\}$, concatenar los siguientes lenguajes:</p>
+					<p>Con $\Sigma=\{i,j,0,2\}$, concatenar los siguientes lenguajes:</p>
 					<ul>
-						<li>$\{a,b\}$ y $\{0,1\}$ </li>
-						<li>$\{a,b,aa,bb,aaa,bbb,aaaa,bbbb,...\}$ y $\{a,b\}$ </li>
-						<li>$\{a,b,aa,bb,aaa,bbb,aaaa,bbbb,...\}$ y $\{\epsilon\}$ </li>
-						<li>$\{a,b,aa,bb,aaa,bbb,aaaa,bbbb,...\}$ y $\{\epsilon,000\}$ </li>
+						<li>$\{i,j\}$ y $\{0,1\}$ </li>
+						<li>$\{i,j,ii,jj,iii,jjj,iiii,jjjj,...\}$ y $\{0,1\}$ </li>
+						<li>$\{i,j,ii,jj,iii,jjj,iiii,jjjj,...\}$ y $\{\epsilon\}$ </li>
+						<li>$\{i,j,ii,jj,iii,jjj,iiii,jjjj,...\}$ y $\{\epsilon,000\}$ </li>
 					</ul>
 					<div class="timer" time='4'></div>
 					<p style="float:right;font-size:0.6em;" class="inverse">Equipo</p>
 				</section>
 				<section>
-					<p>Con $\Sigma=\{a,b\}$, concatenar los siguientes lenguajes:</p>
+					<p>Con $\Sigma=\{x,y,z\}$, concatenar los siguientes lenguajes:</p>
 					<ul>
-						<li>$\Sigma^*$ y $\{a\}$ </li>
-						<li>$\{a\}$ y $\Sigma^*$ </li>
+						<li>$\{x\}$ y $\Sigma^*$ </li>
+						<li>$\Sigma^*$ y $\{z\}$ </li>
 					</ul>
 					<p>Describir ambos lenguajes</p>
 					<div class="timer" time='4'></div>
 					<p style="float:right;font-size:0.6em;" class="inverse">Equipo</p>
 				</section>
 				<section>
-					<p>Con $\Sigma=\{a\}$, calcular las siguientes cerraduras:</p>
+					<p>Con $\Sigma=\{○\}$, calcular las siguientes cerraduras:</p>
 					<ul>
-						<li>$\{a\}^*$ </li>
-						<li>$\{a\}^+$ </li>
-						<li>$\{aa\}^*$ </li>
+						<li>$\{○\}^*$ </li>
+						<li>$\{○\}^+$ </li>
+						<li>$\{○○\}^*$ </li>
 					</ul>
 					<p>Describir los lenguajes</p>
 					<div class="timer" time='4'></div>
 					<p style="float:right;font-size:0.6em;" class="inverse">Equipo</p>
 				</section>
 				<section>
-					<p>Con $\Sigma=\{a\}$ ¿Qué lenguaje nos permite hacer el lenguaje cadenas con una cantidad de aes impar, y qué operaciones están involucradas? </p>
+					<p>Con $\Sigma=\{a\}$ ¿Qué lenguajes nos permite hacer el lenguaje cadenas con una cantidad de aes impar, y qué operaciones están involucradas? </p>
 					<div class="timer" time='5'></div>
 					<p style="float:right;font-size:0.6em;" class="inverse">Individual</p>
 				</section>
 				<section>
-					<p>Con $\Sigma=\{a,b\}$ ¿Qué lenguaje nos permite hacer el lenguaje cadenas con una cantidad de aes par, y qué operaciones están involucradas? </p>
+					<p>Con $\Sigma=\{a,b\}$ ¿Qué lenguajes nos permite hacer el lenguaje cadenas con una cantidad de aes par, y qué operaciones están involucradas? </p>
 					<div class="timer" time='4'></div>
 					<p style="float:right;font-size:0.6em;" class="inverse">Equipo</p>
 				</section>
 				<section>
-					<p>Con $\Sigma=\{a\}$ ¿Qué lenguaje nos permite hacer el lenguaje con cadenas con cantidad par o múltiplo de tres de aes, y qué operaciones están involucradas? </p>
+					<p>Con $\Sigma=\{a\}$ ¿Qué lenguajes nos permite hacer el lenguaje con cadenas con cantidad par o múltiplo de tres de aes, y qué operaciones están involucradas? </p>
 					<div class="timer" time='4'></div>
 					<p style="float:right;font-size:0.6em;" class="inverse">Equipo</p>
-				</section>
-
-				<section>
-					<p>Con $\Sigma=\{a\}$, proponer $L_1$ y $L_2$ tal que $L_1\nsubseteq L_1L_2$ y  $L_1\nsubseteq L_2L_1$ </p>
-					<div class="timer" time='4'></div>
-					<p style="float:right;font-size:0.6em;" class="inverse">Equipo</p>
-				</section>
-				<section>
-					<p>Demostrar $L^+=LL^*=L^*L$</p>
-					<br/>
-					<p><span class="inverse">Pista</span>, realizar ambas operaciones </p>
 				</section>
 				<section>
 				<center>
