@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Problemas máquinas sin memoria</title>
+
+		<meta name="author" content="Ivan Vladimir Meza Ruiz">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+        <link rel="stylesheet" href="plugin/chalkboard/style.css">
+        <link rel="stylesheet" href="plugin/customcontrols/style.css">
+        <link rel="stylesheet/less" type="text/less" href="css/white_red_left.less" />
+        <script src="js/less.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+        <script src="js/timer.js"></script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+				<div class="slides">
+				<div class='footer'>
+					<div class="icons-styles">
+					<ul style="font-size:0.7em" >
+					<li> <a href="mailto:ivanvladimir@gmail.com" target="_blank"><i class="fi-mail iconwhite small"></i>ivanvladimir@gmail.com</a> </li>
+					<li> <a href="http://twitter.com/ivanvladimir" target="_blank"><i class="fi-social-twitter iconwhite small"></i>ivanvladimir</a> </li>
+					<li><a href="http://turing.iimas.unam.mx/~ivanvladimir" target="_blank"><i class="fi-home iconwhite small"></i>http://turing.iimas.unam.mx/~ivanvladimir</a></li>
+					</ul>
+					</div>
+				</div>
+
+<section>
+					<h3>Problemas máquinas que están en varios lugares</h3>
+					<hr/>
+					<br/>
+					<br/>
+					<br/>
+					<h1><span style="font-size:0.5em">If You Like Regular Expressions So Much, Why Don't You Marry Them?— </span><span style='font-size:0.2;font-family:"Great Vibes" cursive;'>Jeff Atwood de <a href="http://blog.codinghorror.com/if-you-like-regular-expressions-so-much-why-dont-you-marry-them/">Coding Horror</a></span></h1>
+					<br/>
+					<br/>
+					<p>
+						<a href="http://ivanvladimir.github.com">Ivan Meza</a>
+					</p>
+			    </section>
+
+				<section>
+					<p>¿Qué lenguaje reconoce la siguiente expresión regular con  $\Sigma=\{a,b\}$?</p>
+					<p>$(bb+aa+ab)(a+b)^*$</p>
+					<div class="timer" time='3'></div>	
+					<p style="float:right;" class="inverse">Individual</p>
+				</section>
+	
+
+				<section>
+					<p>Con $\Sigma=\{a,b\}$ crear una AFND-$\epsilon$ (grafico) para la expresión:</p>
+					<p>$(bb+aa+ab)(a+b)^*$</p>
+					<div class="timer" time='10'></div>	
+					<p style="float:right;" class="inverse">Equipo</p>
+				</section>
+	
+				<section>
+					<p>Con la solución anterior, sacar su tabla de transición</p>
+					<div class="timer" time='4'></div>	
+					<p style="float:right;" class="inverse">Equipo</p>
+				</section>
+
+				<section>
+					<p>Usando el AFND-$\epsilon$ anterior crear un AFND</p>
+					<div class="timer" time='6'></div>	
+					<p style="float:right;" class="inverse">Equipo</p>
+				</section>
+	
+				<section>
+					<p>Usando el AFND anterior crear un AF</p>
+					<div class="timer" time='10'></div>	
+					<p style="float:right;" class="inverse">Equipo</p>
+				</section>
+
+				<section>
+					<p>Usando el AFND anterior sacar un AF mínimo</p>
+					<div class="timer" time='10'></div>	
+					<p style="float:right;" class="inverse">Equipo</p>
+				</section>
+
+
+				
+				<section>
+				<svg width="300" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"  >
+				<ellipse stroke="black" stroke-width="2" fill="none" cx="44.5" cy="191.5" rx="30" ry="30"/>
+				<text fill="black"x="35.5" y="197.5" font-family="Times New Roman" font-size="20">q&#8320;</text>
+				<ellipse stroke="black" stroke-width="2" fill="none" cx="144.5" cy="191.5" rx="30" ry="30"/>
+				<text fill="black"x="135.5" y="197.5" font-family="Times New Roman" font-size="20">q&#8322;</text>
+				<ellipse stroke="black" stroke-width="2" fill="none" cx="144.5" cy="52.5" rx="30" ry="30"/>
+				<text fill="black"x="135.5" y="58.5" font-family="Times New Roman" font-size="20">q&#8321;</text>
+				<ellipse stroke="black" stroke-width="2" fill="none" cx="252.5" cy="52.5" rx="30" ry="30"/>
+				<text fill="black"x="243.5" y="58.5" font-family="Times New Roman" font-size="20">q&#8323;</text>
+				<ellipse stroke="black" stroke-width="2" fill="none" cx="252.5" cy="191.5" rx="30" ry="30"/>
+				<text fill="black"x="243.5" y="197.5" font-family="Times New Roman" font-size="20">q&#8324;</text>
+				<ellipse stroke="black" stroke-width="2" fill="none" cx="252.5" cy="191.5" rx="24" ry="24"/>
+				<polygon stroke="black" stroke-width="2" points="62.02,167.147 126.98,76.853"/>
+				<polygon fill="black" stroke-width="2" points="126.98,76.853 118.249,80.427 126.367,86.267"/>
+				<text fill="black"x="80.5" y="114.5" font-family="Times New Roman" font-size="20">&#949;</text>
+				<polygon stroke="black" stroke-width="2" points="74.5,191.5 114.5,191.5"/>
+				<polygon fill="black" stroke-width="2" points="114.5,191.5 106.5,186.5 106.5,196.5"/>
+				<text fill="black"x="89.5" y="212.5" font-family="Times New Roman" font-size="20">b</text>
+				<polygon stroke="black" stroke-width="2" points="174.5,191.5 222.5,191.5"/>
+				<polygon fill="black" stroke-width="2" points="222.5,191.5 214.5,186.5 214.5,196.5"/>
+				<text fill="black"x="193.5" y="212.5" font-family="Times New Roman" font-size="20">b</text>
+				<polygon stroke="black" stroke-width="2" points="144.5,82.5 144.5,161.5"/>
+				<polygon fill="black" stroke-width="2" points="144.5,161.5 149.5,153.5 139.5,153.5"/>
+				<text fill="black"x="131.5" y="128.5" font-family="Times New Roman" font-size="20">&#949;</text>
+				<polygon stroke="black" stroke-width="2" points="162.906,76.19 234.094,167.81"/>
+				<polygon fill="black" stroke-width="2" points="234.094,167.81 233.133,158.425 225.237,164.561"/>
+				<text fill="black"x="183.5" y="142.5" font-family="Times New Roman" font-size="20">a</text>
+				<polygon stroke="black" stroke-width="2" points="252.5,82.5 252.5,161.5"/>
+				<polygon fill="black" stroke-width="2" points="252.5,161.5 257.5,153.5 247.5,153.5"/>
+				<text fill="black"x="238.5" y="128.5" font-family="Times New Roman" font-size="20">a</text>
+				<polygon stroke="black" stroke-width="2" points="174.5,52.5 222.5,52.5"/>
+				<polygon fill="black" stroke-width="2" points="222.5,52.5 214.5,47.5 214.5,57.5"/>
+				<text fill="black"x="194.5" y="73.5" font-family="Times New Roman" font-size="20">&#949;</text>
+				<path stroke="black" stroke-width="2" fill="none" d="M 275.109,71.953 A 80.251,80.251 0 0 1 275.109,172.047"/>
+				<polygon fill="black" stroke-width="2" points="275.109,71.953 276.189,81.325 284.006,75.088"/>
+				<text fill="black"x="297.5" y="127.5" font-family="Times New Roman" font-size="20">&#949;</text>
+				<path stroke="black" stroke-width="2" fill="none" d="M 32.254,164.26 A 91.506,91.506 0 0 1 114.78,49.549"/>
+				<polygon fill="black" stroke-width="2" points="32.254,164.26 35.042,155.248 25.374,157.805"/>
+				<text fill="black" x="31.5" y="79.5" font-family="Times New Roman" font-size="20">a</text>
+				</svg>
+			
+				</section>
+
+
+				<section>
+				<ul>
+					<li>Calcular el AFND</li>
+					<li>Calcular el AF</li>
+					<li>Proponer una ER</li>
+				</ul>	
+				<div class="timer" time='20'></div>	
+				<p style="float:right;" class="inverse">Equipo</p>
+				</section>
+	
+				<section>
+				<center>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="../img/cc88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">
+				Problemas máquinas que están en varios lugares
+				</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://turing.iimas.unam.mx/~ivanvladimir" property="cc:attributionName" rel="cc:attributionURL">Ivan V. Meza Ruiz</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Reconocimiento 4.0 Internacional License</a>.<br />Creado a partir de la obra en <a xmlns:dct="http://purl.org/dc/terms/" 
+				href="https://ivanvladimir.github.io/lfya_ejercicios" rel="dct:source">
+				https://ivanvladimir.github.io/lfya_ejercicios</a>.
+				</center>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/chalkboard/plugin.js"></script>
+        <script src="plugin/customcontrols/plugin.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
+        <script src="plugin/menu/menu.js"></script>
+        <script src="js/slides-timer.js"></script>
+		<script>
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+                katex: {
+                    version: 'latest',
+                    delimiters: [
+                      {left: '$$', right: '$$', display: true},
+                      {left: '$', right: '$', display: false},
+                      {left: '\\(', right: '\\)', display: false},
+                      {left: '\\[', right: '\\]', display: true}
+                   ],
+                   ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+                 },
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealMath.KaTeX, RevealChalkboard, RevealCustomControls],
+
+                menu: {
+                    themes: false,
+                    custom: [
+                        { title: 'Links', icon: '<i class="fa fa-external-link">', src: 'links.html' },
+                        { title: 'About', icon: '<i class="fa fa-info">', content: '<p>Este es el material de la materia de <a href="http://turing.iimas.unam.mx/~ivanvladimir/page/curso_lfya">Lenguajes Formales y Autómatas</a> que se imparte en la Facultad de Ingeniería de la UNAM</p>' }
+                    ]
+                },
+                customcontrols: {
+                    controls: [{
+                        id: 'toggle-overview',
+                        title: 'Toggle overview (O)',
+                        icon: '<i class="fa fa-th"></i>',
+                        action: 'Reveal.toggleOverview();'
+                    },{
+                        icon: '<i class="fa fa-pen-square"></i>',
+                        title: 'Toggle chalkboard (B)',
+                        action: 'RevealChalkboard.toggleChalkboard();'
+                    },{
+                        icon: '<i class="fa fa-pen"></i>',
+                        title: 'Toggle notes canvas (C)',
+                        action: 'RevealChalkboard.toggleNotesCanvas();'
+                    }]
+                },
+
+			});
+
+		</script>
+
+
+
+
+	</body>
+</html>
